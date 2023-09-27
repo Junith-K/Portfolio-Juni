@@ -1,0 +1,121 @@
+
+  
+  .tech_container {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .tech {
+    width: 50px;
+    height: 55px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #fff;
+    position: relative;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .tech_img {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .title {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 545px) {
+    /* .tech_container {
+      width: 80%;
+    } */
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* .tech_container {
+      width: 89%;
+      height: 305px;
+    } */
+  
+    .tech {
+      width: 50px;
+      height: 55px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* .tech_container {
+      width: 830px;
+      height: 166px;
+    } */
+  
+    .tech {
+      width: 80px;
+      height: 83px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .tech:hover {
+      cursor: pointer;
+      background-color: var(--navy);
+    }
+  
+    .tech_img {
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+    }
+  
+    .tech:hover .tech_img {
+      mix-blend-mode: normal;
+      filter: none;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* .tech_container {
+      width: 970px;
+      height: 185px;
+    } */
+  
+    .tech {
+      width: 50px;
+      height: 55px;
+    }
+  
+    .tech_img {
+      width: 60%;
+      height: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .tech_container {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .tech {
+      width: 55px;
+      height: 60px;
+    }
+  }
+
+  .undo{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    z-index: 2;
+  }

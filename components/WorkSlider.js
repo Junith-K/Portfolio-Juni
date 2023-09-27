@@ -18,39 +18,41 @@ export const workSlider = {
         },
         {
           title: 'Portfolio-Juni',
-          path: '/thumb1.jpg',
-          link: 'https://netflix-clone-ndt.vercel.app/',
+          path: '/portfolio.png',
+          link: 'https://github.com/Junith-K/Portfolio-Juni',
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Ash Ketchum CSS',
+          path: '/ash.jpg',
+          link: 'https://github.com/Junith-K/Ash-Ketchum-CSS'
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'WeatherJS',
+          path: '/weath.png',
+          link: 'https://github.com/Junith-K/WeatherJS'
         },
       ],
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
-      ],
-    },
+    }
+    // {
+    //   images: [
+    //     {
+    //       title: 'title',
+    //       path: '/thumb4.jpg',
+    //     },
+    //     {
+    //       title: 'title',
+    //       path: '/thumb1.jpg',
+    //     },
+    //     {
+    //       title: 'title',
+    //       path: '/thumb2.jpg',
+    //     },
+    //     {
+    //       title: 'title',
+    //       path: '/thumb3.jpg',
+    //     },
+    //   ],
+    // },
   ],
 };
 
