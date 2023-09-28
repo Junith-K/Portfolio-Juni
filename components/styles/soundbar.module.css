@@ -1,0 +1,53 @@
+.liness{
+    background-color: white;
+    border: 1px solid black;
+
+    animation: sound 1s ease infinite;
+    height: 1rem;
+    width: 4px;
+    margin: 0 0.1rem;
+}
+
+.Box {
+display: flex;
+cursor: pointer;
+z-index: 10;
+}
+
+.Box > *:nth-child(1) {
+      transform: scaleY(1);
+      animation-delay: 0.2s;
+}
+
+.Box > *:nth-child(2) {
+      transform: scaleY(2);
+      animation-delay: 0.3s;
+}
+
+.Box > *:nth-child(3) {
+      transform: scaleY(0.75);
+      animation-delay: 0.4s;
+}
+
+.Box > *:nth-child(4) {
+      transform: scaleY(1.5);
+      animation-delay: 0.5s;
+}
+
+.Box > *:nth-child(5) {
+      transform: scaleY(1);
+      animation-delay: 0.8s;
+}
+  
+@keyframes sound {
+    0% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(2);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+}
+  
