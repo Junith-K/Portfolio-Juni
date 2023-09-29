@@ -17,7 +17,7 @@ const Home = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="h1">Journey Through<br /> the {''}
+        className="h1 max-sm:text-2xl">Journey Through<br /> the {''}
         <span className="text-accent">Digital Reality</span>
         </motion.h1>
         <motion.p 
@@ -25,7 +25,7 @@ const Home = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl-mb-16 text-lg">
+        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl-mb-16 text-lg max-sm:text-base">
           In the labyrinth of binary, algorithms emerge as the silent sentinels, deciphering encrypted thoughts woven into lines of code. ~ Anonymous</motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />

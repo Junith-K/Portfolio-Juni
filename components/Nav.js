@@ -1,19 +1,19 @@
 import {HiHome, HiUser, HiViewColumns, HiRectangleGroup, HiChatBubbleBottomCenterText, HiEnvelope} from 'react-icons/hi2';
 
 export const navData = [
-  { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'Home', path: '/', icon: '/home.png' },
+  { name: 'About', path: '/about', icon: '/about.png' },
+  { name: 'Skills', path: '/skills', icon: '/skills.png' },
+  { name: 'Projects', path: '/projects', icon: '/projects.png'},
   {
     name: 'testimonials',
     path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
+    icon: '/home.png',
   },
   {
-    name: 'contact',
+    name: 'Contact',
     path: '/contact',
-    icon: <HiEnvelope />,
+    icon: '/home.png',
   },
 ];
 
@@ -45,7 +45,7 @@ const Nav = () => {
           </div>
           
           <div>
-          {link.icon}
+          <img width={35} height={35} src={link.icon}/>
           </div>
           </Link>;
       })

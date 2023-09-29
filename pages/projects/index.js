@@ -175,11 +175,11 @@ const Services = () => {
   },[hoverId])
 
   return (
-  <div className='h-full bg-primary/30 py-36 flex items-center'>
+  <div className='h-full bg-primary/30 flex md:justify-evenly'>
     <Circles />
-    <div className='container mx-auto z-10'>
-      <div className='flex flex-col xl:flex-row gap-x-8'>
-        <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
+    <div className='container mx-auto z-10 max-xl:mx-0 py-36 max-lg:py-20 max-lg:h-full'>
+      <div className='flex flex-row gap-x-8 max-xl:items-center max-lg:flex-col max-lg:h-full'>
+        <div className='text-center max-lg:w-full max-xl:w-[500px] flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 '>
           <motion.h2 
           variants={fadeIn('up',0.2)} 
           initial='hidden' 
@@ -191,37 +191,36 @@ const Services = () => {
                 <>
             <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
                 <TypeAnimation
-                  style={{ fontSize: '2rem' }}
                   sequence={sequences[0]}
                   speed={10}
                   repeat={Infinity}
+                  className=' text-[2rem] max-lg:text-[1.5rem]'
                 />
                 </>
               ) : hoverId == 1 ? (
                 <>
             <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
                 <TypeAnimation
-                  style={{ fontSize: '2rem' }}
                   sequence={sequences[1]}
                   speed={10}
                   repeat={Infinity}
+                  className=' text-[2rem] max-lg:text-[1.5rem]'
                 />
                 </>
                 ) : hoverId == 2 ? (
                 <>
             <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
                 <TypeAnimation
-                  style={{ fontSize: '2rem' }}
                   sequence={sequences[2]}
                   speed={10}
                   repeat={Infinity}
+                  className=' text-[2rem] max-lg:text-[1.5rem]'
                 />
                 </>
               ) : hoverId == 3 ? (
                 <>
             <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
                 <TypeAnimation
-                  style={{ fontSize: '2rem' }}
                   sequence={sequences[3]}
                   speed={10}
                   repeat={Infinity}
@@ -229,10 +228,10 @@ const Services = () => {
                 </>
                 ) : hoverId == null ? (
                 <TypeAnimation
-                  style={{ fontSize: '2rem' }}
                   sequence={sequences[4]}
                   speed={10}
                   repeat={Infinity}
+                  className=' text-[2rem] max-lg:text-[1.5rem]'
                 />
               ) : (
                 <div style={{ fontSize: '2rem' }}></div>
@@ -244,15 +243,16 @@ const Services = () => {
           initial='hidden' 
           animate='show' 
           exit='hidden'
-          className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-justify'>
+          className='mb-4 w-[400px] max-lg:mx-0 max-lg:w-full mx-auto lg:mx-0 text-justify'>
             {
               hoverId == 0 ? (
                 <>
                   <TypeAnimation
-                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block', fontSize: '1rem' }}
+                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block' }}
                     sequence={sequences1[0]}
                     speed={99}
                     repeat={Infinity}
+                  className='text-[1rem] max-lg:text-[0.85rem]'
                   />
                   <motion.div className={style.tech_container}>
                   {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
@@ -272,10 +272,11 @@ const Services = () => {
               ) : hoverId == 1 ? (
                 <>
                   <TypeAnimation
-                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block', fontSize: '1rem' }}
+                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block' }}
                     sequence={sequences1[1]}
                     speed={99}
                     repeat={Infinity}
+                  className='text-[1rem] max-lg:text-[0.85rem]'
                   />
                   <motion.div className={style.tech_container}>
                   {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
@@ -295,10 +296,11 @@ const Services = () => {
                 ) : hoverId == 2 ? (
                 <>
                   <TypeAnimation
-                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block', fontSize: '1rem' }}
+                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block' }}
                     sequence={sequences1[2]}
                     speed={99}
                     repeat={Infinity}
+                  className='text-[1rem] max-lg:text-[0.85rem]'
                   />
                   <motion.div className={style.tech_container}>
                   {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
@@ -318,10 +320,11 @@ const Services = () => {
               ) : hoverId == 3 ? (
                 <>
                   <TypeAnimation
-                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block', fontSize: '1rem' }}
+                    style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block' }}
                     sequence={sequences1[3]}
                     speed={99}
                     repeat={Infinity}
+                  className='text-[1rem] max-lg:text-[0.85rem]'
                   />
                   <motion.div className={style.tech_container}>
                   {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
@@ -341,10 +344,11 @@ const Services = () => {
               ) : hoverId == null ? (
                 <>
                 <TypeAnimation
-                  style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block', fontSize: '1rem' }}
+                  style={{ whiteSpace: 'pre-line', margin: '0 0 1em 0', display: 'block' }}
                   sequence={sequences1[4]}
                   speed={99}
                   repeat={Infinity}
+                  className='text-[1rem] max-lg:text-[0.85rem]'
                 />
                  <motion.div className={style.tech_container}>
                   {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
@@ -372,7 +376,7 @@ const Services = () => {
         initial='hidden' 
         animate='show' 
         exit='hidden'
-        className='w-full xl:max-w-[65%]'>
+        className='w-[65%] max-lg:w-[100%] md:w-[65%] h-auto'>
         {/* <ParticlesContainer /> */}
         <WorkSlider changeSequence={changeSequence}/>
         </motion.div>

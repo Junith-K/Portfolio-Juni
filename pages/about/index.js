@@ -5,6 +5,8 @@ import {TbSql} from 'react-icons/tb';
 import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
+import ParticlesContainer from "../../components/ParticlesContainer";
+import Bulb from "../../components/Bulb";
 /* eslint-disable react/jsx-key */
 export const aboutData = [
   {
@@ -83,6 +85,7 @@ const About = () => {
   return (
   <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
     <Circles/>
+    <ParticlesContainer />
     {/* <motion.div 
     variants={fadeIn('right',0.2)} 
     initial='hidden' 
@@ -147,6 +150,7 @@ const About = () => {
         </div>
       </motion.div> 
     </div>
+    <Bulb/>
   </div>
   );
 };

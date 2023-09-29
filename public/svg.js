@@ -1,0 +1,4 @@
+import { java, python, c, cplusplus, sqlite, sequelize, postgresql, javascript, html5, css3, typescript, sass, json, react, nodedotjs, nodemon, materialui, express, nextdotjs, redux, reduxsaga, bootstrap, tailwindcss, jquery, git, github, jira, docker, googlecloud, amazonaws, babel, npm, webpack, mongodb, mysql, heroku, vercel, netlify, figma, windows, linux, flutter, dart, android, yarn, firebase, microsoftazure } from "simple-icons"
+
+const icons_data = [ java, python, c, cplusplus, sqlite, sequelize, postgresql, javascript, html5, css3, typescript, sass, json, react, nodedotjs, nodemon, materialui, express, nextdotjs, redux, reduxsaga, bootstrap, tailwindcss, jquery, git, github, jira, docker, googlecloud, amazonaws, babel, npm, webpack, mongodb, mysql, heroku, vercel, netlify, figma, windows, linux, flutter, dart, android, yarn, firebase, microsoftazure ];
+export default icons_data;
