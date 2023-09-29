@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {FaHtml5, FaCss3, FaJs, FaJava, FaReact, FaPython, } from 'react-icons/fa';
+import { SiLeetcode, SiHackerearth, SiHackerrank, SiCodechef, SiCodeforces } from "react-icons/si";
 import {SiNextdotjs, SiTailwindcss, SiMongodb} from 'react-icons/si';
 import {TbSql} from 'react-icons/tb';
 import Circles from '../../components/Circles';
@@ -7,44 +8,38 @@ import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
 import ParticlesContainer from "../../components/ParticlesContainer";
 import Bulb from "../../components/Bulb";
+import { FcGoogle } from "react-icons/fc";
 /* eslint-disable react/jsx-key */
 export const aboutData = [
   {
-    title: 'skills',
+    title: 'education',
     info: [
       {
-        title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <SiTailwindcss/>,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiMongodb/>,
-        ],
+        title: "B.Tech in Electronics and Communication",
+        stage: "IIIT Sri City"
       },
       {
-        title: 'Programming languages',
-        icons: [<FaJava />, <FaPython/>, <TbSql/>],
+        title: 'MPC',
+        stage: "FIITJEE, Visakhapatnam"
+        // icons: [<FaJava />, <FaPython/>, <TbSql/>],
       },
     ],
   },
   {
-    title: 'certifications',
+    title: 'awards',
     info: [
       {
-        title: 'The Web Developer Bootcamp 2023, Udemy',
-        stage: 'May 2023',
+        title: 'Runner up in Speed UI Hackathon',
+        stage: 'November 2022',
       },
-      // {
-      //   title: 'Adobe Design Achievement Awards - Finalist',
-      //   stage: '2009 - 2010',
-      // },
+      {
+        title: 'Solved more than 300 DSA Questions',
+        icons: [<SiLeetcode/>, <SiHackerearth/>, <SiHackerrank/>, <SiCodechef/>,<SiCodeforces/>]
+      },
     ],
   },
   {
-    title: 'experience',
+    title: 'extracurricular',
     info: [
       // {
       //   title: 'UX/UI Designer - XYZ Company',
@@ -55,8 +50,14 @@ export const aboutData = [
       //   stage: '2010 - 2012',
       // },
        {
-        title: 'Intern - Neelan Oxysoft Pvt.Ltd',
-        stage: 'Dec 2021 - Mar 2022',
+        title: 'Google Student Developer Club',
+        stage: 'Web Development Core 2023 - ',
+        icons: [<FcGoogle/>]
+      },
+      {
+        title: 'IOTA',
+        stage: 'Design Team Lead 2022'
+        // icons: [<FcGoogle/>]
       },
     ],
   },
@@ -86,6 +87,19 @@ const About = () => {
   <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
     <Circles/>
     <ParticlesContainer />
+    <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="bg-none xl:bg-explosion animate-pulse duration-75 xl:bg-cover xl:bg-right 
+      xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+        </div>
+        <motion.div 
+        variants={fadeIn("up",0.5)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        transition={{duration: 1, ease: 'easeInOut'}}
+        className="w-full h-full max-w-[480px] max-h-[562px] absolute -bottom-20 lg:right-[10%]">
+        </motion.div>
+    </div>
     {/* <motion.div 
     variants={fadeIn('right',0.2)} 
     initial='hidden' 
@@ -95,7 +109,7 @@ const About = () => {
     <Avatar />
     </motion.div> */}
     <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-      <div className="flex-1 flex flex-col justify-center">
+      <div className="flex-1 flex flex-col justify-center z-40">
         <div>
         <motion.h2 className="h2"
         variants={fadeIn('right',0.2)} 
@@ -115,7 +129,7 @@ const About = () => {
       initial='hidden' 
       animate='show' 
       exit='hidden'
-      className="flex flex-col w-full xl:max-w-[48%] h-[60%]">
+      className="flex flex-col w-full xl:max-w-[48%] h-[60%] z-40">
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex)=>{
             return (

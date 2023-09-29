@@ -1,10 +1,10 @@
 import {HiHome, HiUser, HiViewColumns, HiRectangleGroup, HiChatBubbleBottomCenterText, HiEnvelope} from 'react-icons/hi2';
 
 export const navData = [
-  { name: 'Home', path: '/', icon: '/home.png' },
-  { name: 'About', path: '/about', icon: '/about.png' },
-  { name: 'Skills', path: '/skills', icon: '/skills.png' },
-  { name: 'Projects', path: '/projects', icon: '/projects.png'},
+  { name: 'Home', path: '/', icon: '/home.png', icon1: '/home1.png' },
+  { name: 'About', path: '/about', icon: '/about.png', icon1: '/about1.png' },
+  { name: 'Skills', path: '/skills', icon: '/skills.png', icon1: '/skills1.png' },
+  { name: 'Projects', path: '/projects', icon: '/projects.png', icon1: '/projects1.png' },
   {
     name: 'testimonials',
     path: '/testimonials',
@@ -45,7 +45,7 @@ const Nav = () => {
           </div>
           
           <div>
-          <img width={35} height={35} src={link.icon}/>
+          <img width={24} height={24} src={link.path==pathname?link.icon1:link.icon}/>
           </div>
           </Link>;
       })
