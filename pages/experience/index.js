@@ -58,8 +58,7 @@ const Services = () => {
         exit='hidden'
         className='z-40 flex gap-x-5 min-[640px]:gap-x-10'>
         {experience.map((item,index)=>{
-          return <>
-          <div key={index} className={styles.nftxu} >
+          return <div key={index} className={styles.nftxu} >
             <div className={styles.mainxu}>
               <img className={styles.tokenImagexu} src={item.image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item.title}</h2>
@@ -72,14 +71,13 @@ const Services = () => {
               <hr />
               <div className='flex justify-evenly items-center mt-3'>
                 {item.icons?.map((icon, index1)=>{
-                    return (/* eslint-disable react/jsx-key */
+                    return (
                       <div key={`${index1}55`} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
-                  /* eslint-enable react/jsx-key */ )
+                   )
                 })}
               </div>
             </div>
           </div>
-          </>
         })}
         </motion.div>
       </div>
