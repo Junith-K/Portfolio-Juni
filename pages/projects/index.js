@@ -144,9 +144,7 @@ const Services = () => {
   const [hoverId, setHoverId] = useState(null);
   const [hoverIdDup, setHoverIdDup] = useState(null);
   const changeSequence = (hoveredItemId) => {
-    console.log(hoveredItemId)
     const selectedSequence = hoveredItemId != null ? sequences[hoveredItemId+1] : selectedSeq;
-    console.log(selectedSequence)
     if(selectedSequence!=selectedSeq){
       setStack(hoveredItemId!=null?hoveredItemId:"null")
       setSelectedSeq(selectedSequence);
@@ -155,9 +153,7 @@ const Services = () => {
     }
   };
   const changeSequence1 = (hoveredItemId) => {
-    console.log(hoveredItemId)
     const selectedSequence = hoveredItemId != null ? sequences[hoveredItemId+1] : sequences[0];
-    console.log(selectedSequence)
     if(selectedSequence!=selectedSeq){
       setStack(hoveredItemId!=null?hoveredItemId:"null")
       setSelectedSeq(selectedSequence);

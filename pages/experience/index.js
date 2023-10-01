@@ -7,7 +7,7 @@ import ParticlesContainer from '../../components/ParticlesContainer';
 import { SiCss3, SiJavascript, SiRedux, SiReact, SiBootstrap, SiTailwindcss } from "react-icons/si";
 import {ImHtmlFive} from "react-icons/im"
 
-const experience = [
+const item = [
   {
     key: "lawa",
     title: "Lawazia Tech",
@@ -59,28 +59,45 @@ const Services = () => {
         animate='show' 
         exit='hidden'
         className='z-40 flex gap-x-5 min-[640px]:gap-x-10'>
-        {experience.map((item)=>{
-          return <div key={item.key} className={styles.nftxu} >
-            <div key={item.key} className={styles.mainxu}>
-              <img className={styles.tokenImagexu} src={item.image} alt="NFT" />
-              <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item.title}</h2>
-              <p className={styles.descriptionxu}>{item.description}</p>
+          <div className={styles.nftxu} >
+            <div className={styles.mainxu}>
+              <img className={styles.tokenImagexu} src={item[0].image} alt="NFT" />
+              <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[0].title}</h2>
+              <p className={styles.descriptionxu}>{item[0].description}</p>
               <div className={styles.tokenInfoxu}>
-                <div className={styles.durationxu}>{item.timeStart}</div>
+                <div className={styles.durationxu}>{item[0].timeStart}</div>
                 <div className={styles.durationxu1}>-</div>
-                <div className={styles.durationxu}>{item.timeEnd}</div>
+                <div className={styles.durationxu}>{item[0].timeEnd}</div>
               </div>
               <hr />
               <div className='flex justify-evenly items-center mt-3'>
-                {item.icons?.map((icon, index1)=>{
-                    return (
-                      <div key={index1} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
-                   )
-                })}
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiReact/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiRedux/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiJavascript/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiTailwindcss/></div>
               </div>
             </div>
           </div>
-        })}
+          <div className={styles.nftxu} >
+            <div className={styles.mainxu}>
+              <img className={styles.tokenImagexu} src={item[1].image} alt="NFT" />
+              <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[1].title}</h2>
+              <p className={styles.descriptionxu}>{item[1].description}</p>
+              <div className={styles.tokenInfoxu}>
+                <div className={styles.durationxu}>{item[1].timeStart}</div>
+                <div className={styles.durationxu1}>-</div>
+                <div className={styles.durationxu}>{item[1].timeEnd}</div>
+              </div>
+              <hr />
+              <div className='flex justify-evenly items-center mt-3'>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><ImHtmlFive/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiCss3/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiReact/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiTailwindcss/></div>
+                <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100"><SiBootstrap/></div>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </div>
