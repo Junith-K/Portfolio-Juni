@@ -1,11 +1,10 @@
-import ServiceSlider from '../../components/ServiceSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
 import styles from "../../components/styles/experience.module.css"
 import ParticlesContainer from '../../components/ParticlesContainer';
-import { SiLeetcode, SiHackerearth, SiHackerrank, SiCodechef, SiCodeforces, SiCss3, SiJavascript, SiRedux, SiReact, SiBootstrap, SiTailwindcss } from "react-icons/si";
+import { SiCss3, SiJavascript, SiRedux, SiReact, SiBootstrap, SiTailwindcss } from "react-icons/si";
 import {ImHtmlFive} from "react-icons/im"
 
 const experience = [

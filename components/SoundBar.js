@@ -24,7 +24,7 @@ const SoundBar = () => {
             <span style={{animationPlayState: click?"running": "paused"}} className={style.liness} click={click}/>
   
  
-            <audio src='/song2.mp3' ref={ref} loop />
+            <audio src='/song.mp3' ref={ref} loop />
         </div>
     )
 }

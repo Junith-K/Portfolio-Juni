@@ -1,9 +1,6 @@
 import React, {useState} from "react";
 import {ImHtmlFive } from 'react-icons/im';
 import { SiLeetcode, SiHackerearth, SiHackerrank, SiCodechef, SiCodeforces, SiCss3, SiJavascript, SiRedux, SiReact, SiNodedotjs, SiMongodb } from "react-icons/si";
-import {TbBrandNextjs} from 'react-icons/tb';
-import {BiLogoReact, BiLogoCss3, BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoHtml5, Next} from 'react-icons/bi'
-import {TbSql} from 'react-icons/tb';
 import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
@@ -22,7 +19,6 @@ export const aboutData = [
       {
         title: 'MPC',
         stage: "FIITJEE, Visakhapatnam"
-        // icons: [<FaJava />, <FaPython/>, <TbSql/>],
       },
     ],
   },
@@ -42,14 +38,6 @@ export const aboutData = [
   {
     title: 'extracurricular',
     info: [
-      // {
-      //   title: 'UX/UI Designer - XYZ Company',
-      //   stage: '2012 - 2023',
-      // },
-      // {
-      //   title: 'Web Developer - ABC Agency',
-      //   stage: '2010 - 2012',
-      // },
        {
         title: 'Google Student Developer',
         stage: 'Web Development Core 2023 - ',
@@ -58,19 +46,9 @@ export const aboutData = [
       {
         title: 'IOTA',
         stage: 'Design Team Lead 2022'
-        // icons: [<FcGoogle/>]
       },
     ],
   },
-  // {
-  //   title: 'Stack Preferences',
-  //   info: [
-  //     {
-  //       title: 'MD Info-Tech Solutions, Erode',
-  //       icons: [<BiLogoReact/>,<AiFillHtml5m/>,<BiLogoCss3/>,<BiLogoJavascript/>,<BiLogoNodejs/>,<BiLogoMongodb/>]
-  //     },
-  //   ],
-  // },
   {
     title: 'Tech stack',
     info: [
@@ -106,14 +84,6 @@ const About = () => {
         className="w-full h-full max-w-[480px] max-h-[562px] absolute -bottom-20 lg:right-[10%]">
         </motion.div>
     </div>
-    {/* <motion.div 
-    variants={fadeIn('right',0.2)} 
-    initial='hidden' 
-    animate='show' 
-    exit='hidden'
-    className="hidden xl:flex absolute bottom-0 -left-[370px]">
-    <Avatar />
-    </motion.div> */}
     <div className="container mx-auto h-full flex flex-col justify-center items-center xl:flex-row xl:gap-x-6 gap-y-6">
       <div className="flex flex-col justify-center z-40">
         <div>

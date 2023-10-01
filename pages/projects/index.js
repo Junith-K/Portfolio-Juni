@@ -378,7 +378,6 @@ const Services = () => {
         animate='show' 
         exit='hidden'
         className='w-[65%] max-lg:w-[100%] md:w-[65%] h-auto'>
-        {/* <ParticlesContainer /> */}
         <WorkSlider changeSequence={changeSequence}/>
         </motion.div>
       </div>

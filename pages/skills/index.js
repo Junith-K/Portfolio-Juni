@@ -1,4 +1,3 @@
-import ServiceSlider from '../../components/ServiceSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
@@ -72,7 +71,6 @@ const Services = () => {
           exit='hidden' 
           className='h2 xl:mt-8 text-accent  font-bold text-left'>
             <TypeAnimation
-              // style={{ fontSize: '2rem' }}
               sequence={[
                 150,
                 'Technical Prowess.',

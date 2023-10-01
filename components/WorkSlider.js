@@ -1,7 +1,6 @@
 import {Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import React, { useEffect, useState } from 'react';
-
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
@@ -18,7 +17,7 @@ export const workSlider = {
         },
         {
           title: 'Portfolio-Juni',
-          path: '/portfolio.png',
+          path: '/portfolio_juni.png',
           link: 'https://github.com/Junith-K/Portfolio-Juni',
         },
         {
@@ -33,26 +32,6 @@ export const workSlider = {
         },
       ],
     }
-    // {
-    //   images: [
-    //     {
-    //       title: 'title',
-    //       path: '/thumb4.jpg',
-    //     },
-    //     {
-    //       title: 'title',
-    //       path: '/thumb1.jpg',
-    //     },
-    //     {
-    //       title: 'title',
-    //       path: '/thumb2.jpg',
-    //     },
-    //     {
-    //       title: 'title',
-    //       path: '/thumb3.jpg',
-    //     },
-    //   ],
-    // },
   ],
 };
 
@@ -65,7 +44,6 @@ const WorkSlider = ({changeSequence}) => {
       clearTimeout(hoverTimeout);
     }
 
-    // Set a timeout for 250ms to delay the hover effect
     const timeoutId = setTimeout(() => {
       setHoveredItemId(itemId);
     }, 500);
@@ -77,7 +55,6 @@ const WorkSlider = ({changeSequence}) => {
       clearTimeout(hoverTimeout);
     }
 
-    // Clear the hovered item when leaving
     setHoveredItemId(null);
   };
   useEffect(()=>{
@@ -102,7 +79,7 @@ const WorkSlider = ({changeSequence}) => {
                   key={imageIndex}
                   className='relative rounded-lg overflow-hidden flex items-center justify-center group'
                   onMouseEnter={() => handleItemHover(imageIndex)}
-                  onMouseLeave={() => handleItemHover(null)} // Reset when leaving
+                  onMouseLeave={() => handleItemHover(null)}
                 >
                   <div className='flex items-center justify-center relative overflow-hidden group'>
                     <Image src={image.path} width={500} height={300} className='bg-red-300' alt='' />
