@@ -74,7 +74,7 @@ const Services = () => {
               <div className='flex justify-evenly items-center mt-3'>
                 {item.icons?.map((icon, index1)=>{
                     return (
-                      <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
+                      <div key={index1} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
                    )
                 })}
               </div>
