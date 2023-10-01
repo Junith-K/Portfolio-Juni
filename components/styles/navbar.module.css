@@ -1,0 +1,10 @@
+.discord_radius{
+    border-radius: 50%;
+    transition: border-radius 250ms, background-color 250ms;
+    background-color: rgb(255 255 255 / 0.2);
+}
+
+.discord_radius:hover, .discord_active{
+    border-radius: 25%;
+    background-color: rgb(255 0 0 / 0.6);
+}

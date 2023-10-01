@@ -1,0 +1,135 @@
+.nftxu {
+  user-select: none;
+  width: 300px;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.4) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  overflow: hidden;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .nftxu .mainxu .tokenImagexu{
+    display:none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  /* .nftxu{
+    width: 500px;
+  } */
+  .descriptionxu{
+    font-size: 0.7rem !important;
+  }
+  .durationxu{
+    font-size: 0.7rem !important;
+  }
+  .durationxu1{
+    display: block;
+  }
+}
+
+@media (max-width: 960px) {
+  .nftxu{
+    width: 500px;
+  }
+  .descriptionxu{
+    font-size: 0.85rem;
+    margin: 0 !important;
+  }
+  .durationxu{
+    font-size: 0.85rem;
+  }
+}
+
+
+
+.nftxu hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+.nftxu ins {
+  text-decoration: none;
+}
+.nftxu .mainxu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+.nftxu .mainxu .tokenImagexu {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.nftxu .mainxu .descriptionxu {
+  margin: 0.5rem 0;
+  color: #a89ec9;
+  text-align: justify;
+}
+.nftxu .mainxu .descriptionx1 {
+  display: none;
+  margin: 0.5rem 0;
+  color: #a89ec9;
+  text-align: justify;
+}
+.nftxu .mainxu .tokenInfoxu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nftxu .mainxu .tokenInfoxu hr {
+  width: min-content;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+.nftxu .mainxu .tokenInfoxu .pricexu {
+  display: flex;
+  align-items: center;
+  color: #ee83e5;
+  font-weight: 700;
+}
+.nftxu .mainxu .tokenInfoxu .pricexu ins {
+  margin-left: -0.3rem;
+  margin-right: 0.5rem;
+}
+.nftxu .mainxu .tokenInfoxu .durationxu {
+  display: flex;
+  align-items: center;
+  color: #a89ec9;
+  margin-right: 0.2rem;
+}
+.nftxu .mainxu .tokenInfoxu .durationxu ins {
+  margin: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.nftxu ::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.7s all;
+}
+.nftxu:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+.nftxu:hover ::before {
+  filter: brightness(0.5);
+  top: -100%;
+  left: 200%;
+}

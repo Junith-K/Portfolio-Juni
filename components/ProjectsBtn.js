@@ -5,7 +5,7 @@ import {HiArrowRight} from 'react-icons/hi2';
 const ProjectsBtn = () => {
   return (
   <div className='mx-auto xl:mx-0 z-20'>
-    <Link href={'/work'}
+    <Link href={'/projects'}
     className='relative w-[185px] max-sm:w-[150px] max-sm:h-[150px] h-[185px] flex justify-center 
     items-center bg-circleStar bg-cover bg-center bg-no-repeat group'>
       <Image src={'/rounded-text.png'} width={141} height={148} alt='' 

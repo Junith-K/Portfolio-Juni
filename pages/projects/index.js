@@ -224,6 +224,7 @@ const Services = () => {
                   sequence={sequences[3]}
                   speed={10}
                   repeat={Infinity}
+                  className=' text-[2rem] max-lg:text-[1.5rem]'
                 />
                 </>
                 ) : hoverId == null ? (

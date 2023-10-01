@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import {FaHtml5, FaCss3, FaJs, FaJava, FaReact, FaPython, } from 'react-icons/fa';
-import { SiLeetcode, SiHackerearth, SiHackerrank, SiCodechef, SiCodeforces } from "react-icons/si";
-import {SiNextdotjs, SiTailwindcss, SiMongodb} from 'react-icons/si';
+import {ImHtmlFive } from 'react-icons/im';
+import { SiLeetcode, SiHackerearth, SiHackerrank, SiCodechef, SiCodeforces, SiCss3, SiJavascript, SiRedux, SiReact, SiNodedotjs, SiMongodb } from "react-icons/si";
+import {TbBrandNextjs} from 'react-icons/tb';
+import {BiLogoReact, BiLogoCss3, BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoHtml5, Next} from 'react-icons/bi'
 import {TbSql} from 'react-icons/tb';
 import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
@@ -50,7 +51,7 @@ export const aboutData = [
       //   stage: '2010 - 2012',
       // },
        {
-        title: 'Google Student Developer Club',
+        title: 'Google Student Developer',
         stage: 'Web Development Core 2023 - ',
         icons: [<FcGoogle/>]
       },
@@ -61,20 +62,25 @@ export const aboutData = [
       },
     ],
   },
+  // {
+  //   title: 'Stack Preferences',
+  //   info: [
+  //     {
+  //       title: 'MD Info-Tech Solutions, Erode',
+  //       icons: [<BiLogoReact/>,<AiFillHtml5m/>,<BiLogoCss3/>,<BiLogoJavascript/>,<BiLogoNodejs/>,<BiLogoMongodb/>]
+  //     },
+  //   ],
+  // },
   {
-    title: 'implant Training',
+    title: 'Tech stack',
     info: [
-      // {
-      //   title: 'Web Development - ABC University, LA, CA',
-      //   stage: '2011',
-      // },
-      // {
-      //   title: 'Computer Science Diploma - AV Technical Institute',
-      //   stage: '2009',
-      // },
       {
-        title: 'MD Info-Tech Solutions, Erode',
-        stage: '2020',
+        title: 'Frontend',
+        icons: [<SiReact/>,<ImHtmlFive/>, <SiCss3/>, <SiJavascript/>, <SiRedux/>]
+      },
+      {
+        title: 'Backend',
+        icons: [<SiNodedotjs/>,<SiMongodb/>]
       },
     ],
   },
@@ -84,10 +90,10 @@ const About = () => {
   const [index, setIndex]= useState(0);
   console.log(index);
   return (
-  <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+  <div className="h-full bg-primary/30 text-center xl:text-left">
     <Circles/>
     <ParticlesContainer />
-    <div className="w-[1200px] h-full absolute right-0 bottom-0">
+    <div className="w-[1200px] h-full py-32 absolute right-0 bottom-0">
       <div className="bg-none xl:bg-explosion animate-pulse duration-75 xl:bg-cover xl:bg-right 
       xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
         </div>
@@ -108,15 +114,15 @@ const About = () => {
     className="hidden xl:flex absolute bottom-0 -left-[370px]">
     <Avatar />
     </motion.div> */}
-    <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-      <div className="flex-1 flex flex-col justify-center z-40">
+    <div className="container mx-auto h-full flex flex-col justify-center items-center xl:flex-row xl:gap-x-6 gap-y-6">
+      <div className="flex flex-col justify-center z-40">
         <div>
-        <motion.h2 className="h2"
+        <motion.h2 className="text-[3rem] max-lg:text-[2rem]"
         variants={fadeIn('right',0.2)} 
         initial='hidden' 
         animate='show' 
         exit='hidden'>The web development</motion.h2> 
-        <motion.p className="text-2xl"
+        <motion.p className="text-[1.5rem] max-lg:text-[1rem]"
         variants={fadeIn('right',0.4)} 
         initial='hidden' 
         animate='show' 
@@ -129,13 +135,13 @@ const About = () => {
       initial='hidden' 
       animate='show' 
       exit='hidden'
-      className="flex flex-col w-full xl:max-w-[48%] h-[60%] z-40">
+      className="flex flex-col w-full xl:max-w-[48%] z-40">
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex)=>{
             return (
              <div key={itemIndex} className={`cursor-pointer ${index===itemIndex &&
-            'text-accent after-[100%] after:bg-accent after:transition-all after:duration-300'
-            } cursor-pointer capitalize xl:text-lg relative after:w-8
+            'text-accent after-[100%] after:bg-accent font-bold after:transition-all after:duration-300'
+            } cursor-pointer capitalize text-[1.25rem] max-md:text-[1rem] max-sm:text-[0.80rem] relative after:w-8
              after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
              onClick={()=>setIndex(itemIndex)}> 
               {item.title}
@@ -146,15 +152,15 @@ const About = () => {
         <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
           {aboutData[index].info.map((item,itemIndex)=>{
             return (
-              <div key={itemIndex} className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
-                <div className="flex gap-x-4">    
+              <div key={itemIndex} className="flex flex-col md:flex-row max-w-max gap-x-2 items-center cursor-pointer text-white/60 p-2 bg-black radius hover:text-black/60 hover:bg-white transition duration-700 ease-out rounded-lg">
+                <div className="font-light mb-2 md:mb-0 text-[1rem] max-md:text-[0.8rem]">{item.title}</div>
+                <div className="hidden md:flex text-[1rem] max-md:text-[0.8rem]">-</div>
+                <div className="text-[1rem] max-md:text-[0.8rem]">{item.stage}</div>
+                <div className="flex gap-x-4 ">    
                 {item.icons?.map((icon)=>{
                   
                   return (/* eslint-disable react/jsx-key */
-                    <div className="text-2xl hover:text-white/100">{icon}</div>
+                    <div className="text-[1.5rem]">{icon}</div>
                  /* eslint-enable react/jsx-key */ )
                 })}
                 </div>
