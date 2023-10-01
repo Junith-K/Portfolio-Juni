@@ -61,7 +61,7 @@ const Services = () => {
           return <>
           <div key={index} className={styles.nftxu} >
             <div className={styles.mainxu}>
-              <img className={styles.tokenImagexu} src={item.image} alt="NFT" />
+              <Image className={styles.tokenImagexu} src={item.image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item.title}</h2>
               <p className={styles.descriptionxu}>{item.description}</p>
               <div className={styles.tokenInfoxu}>
@@ -73,7 +73,7 @@ const Services = () => {
               <div className='flex justify-evenly items-center mt-3'>
                 {item.icons?.map((icon, index1)=>{
                     return (/* eslint-disable react/jsx-key */
-                      <div key={index1} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
+                      <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
                   /* eslint-enable react/jsx-key */ )
                 })}
               </div>
