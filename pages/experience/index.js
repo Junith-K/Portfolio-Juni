@@ -61,7 +61,7 @@ const Services = () => {
         className='z-40 flex gap-x-5 min-[640px]:gap-x-10'>
         {experience.map((item)=>{
           return <div key={item.key} className={styles.nftxu} >
-            <div className={styles.mainxu}>
+            <div key={item.key} className={styles.mainxu}>
               <img className={styles.tokenImagexu} src={item.image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item.title}</h2>
               <p className={styles.descriptionxu}>{item.description}</p>
