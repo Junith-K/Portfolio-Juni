@@ -9,6 +9,7 @@ import {ImHtmlFive} from "react-icons/im"
 
 const experience = [
   {
+    key: "lawa",
     title: "Lawazia Tech",
     description: "We help global brands with digital products on web, mobile and connected platforms.",
     timeStart: "Jan 2023",
@@ -17,6 +18,7 @@ const experience = [
     icons: [<SiReact/>, <SiRedux/>, <SiJavascript/>, <SiTailwindcss/>]
   },
   {
+    key: "bill",
     title: "Bill OK",
     description: "BillOK automates invoice management with AI, empowering entrepreneurs to focus on business growth.",
     timeStart: "Jun 2022",
@@ -57,8 +59,8 @@ const Services = () => {
         animate='show' 
         exit='hidden'
         className='z-40 flex gap-x-5 min-[640px]:gap-x-10'>
-        {experience.map((item,index)=>{
-          return <div key={index} className={styles.nftxu} >
+        {experience.map((item)=>{
+          return <div key={item.key} className={styles.nftxu} >
             <div className={styles.mainxu}>
               <img className={styles.tokenImagexu} src={item.image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item.title}</h2>
@@ -72,7 +74,7 @@ const Services = () => {
               <div className='flex justify-evenly items-center mt-3'>
                 {item.icons?.map((icon, index1)=>{
                     return (
-                      <div key={`${index1}55`} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
+                      <div key={`${item.key}${index1}`} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
                    )
                 })}
               </div>
