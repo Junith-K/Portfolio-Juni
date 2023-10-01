@@ -50,7 +50,7 @@ const Services = () => {
           animate='show' 
           exit='hidden'
           className='mb-4 min-[960px]:max-w-[400px] max-[960px]:text-[0.9rem] lg:mx-0 text-center max-md:text-[0.6rem]'>
-          Navigating the realms of software engineering, I've honed my skills in crafting efficient and reliable solutions. Join me on a journey through practical experiences and collaborative coding adventures.
+          Navigating the realms of software engineering, I&rsquo;ve honed my skills in crafting efficient and reliable solutions. Join me on a journey through practical experiences and collaborative coding adventures.
           </motion.p>
         </div>
         <motion.div 
@@ -74,7 +74,7 @@ const Services = () => {
               <div className='flex justify-evenly items-center mt-3'>
                 {item.icons?.map((icon, index1)=>{
                     return (
-                      <div key={`${item.key}${index1}`} className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
+                      <div className="text-[1.5rem] max-[960px]:text-[1.25rem] hover:text-white/100">{icon}</div>
                    )
                 })}
               </div>
