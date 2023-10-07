@@ -6,6 +6,7 @@ import styles from "../../components/styles/experience.module.css"
 import ParticlesContainer from '../../components/ParticlesContainer';
 import { SiCss3, SiJavascript, SiRedux, SiReact, SiBootstrap, SiTailwindcss } from "react-icons/si";
 import {ImHtmlFive} from "react-icons/im"
+import Image from 'next/image';
 
 const item = [
   {
@@ -14,7 +15,7 @@ const item = [
     description: "We help global brands with digital products on web, mobile and connected platforms.",
     timeStart: "Jan 2023",
     timeEnd: "Jun 2023",
-    image: "https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: "/cube.png",
   },
   {
     key: "bill",
@@ -22,7 +23,7 @@ const item = [
     description: "BillOK automates invoice management with AI, empowering entrepreneurs to focus on business growth.",
     timeStart: "Jun 2022",
     timeEnd: "Aug 2022",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+    image: "/window.png",
   }
 ]
 
@@ -59,7 +60,7 @@ const Services = () => {
         className='z-40 flex gap-x-5 min-[640px]:gap-x-10'>
           <div className={styles.nftxu} >
             <div className={styles.mainxu}>
-              <img className={styles.tokenImagexu} src={item[0].image} alt="NFT" />
+              <Image loading="eager" width={500} height={250} quality={100} className={styles.tokenImagexu} src={item[0].image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[0].title}</h2>
               <p className={styles.descriptionxu}>{item[0].description}</p>
               <div className={styles.tokenInfoxu}>
@@ -78,7 +79,7 @@ const Services = () => {
           </div>
           <div className={styles.nftxu} >
             <div className={styles.mainxu}>
-              <img className={styles.tokenImagexu} src={item[1].image} alt="NFT" />
+              <Image loading="eager" width={500} height={250} quality={100} className={styles.tokenImagexu} src={item[1].image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[1].title}</h2>
               <p className={styles.descriptionxu}>{item[1].description}</p>
               <div className={styles.tokenInfoxu}>

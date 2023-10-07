@@ -8,6 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 import React, { useEffect, useState } from 'react';
 import ParticlesContainer from '../../components/ParticlesContainer';
 import style from '../../components/styles/techstack.module.css'
+import Image from 'next/image';
 
 const technologies = [
   {
@@ -185,7 +186,7 @@ const Services = () => {
             {
               hoverId == 0 ? (
                 <>
-            <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
+            <Image loading="eager" priority={true} quality={100} onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg' width={0} height={0}/>
                 <TypeAnimation
                   sequence={sequences[0]}
                   speed={10}
@@ -195,7 +196,7 @@ const Services = () => {
                 </>
               ) : hoverId == 1 ? (
                 <>
-            <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
+            <Image loading="eager" priority={true} quality={100} onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg' width={0} height={0}/>
                 <TypeAnimation
                   sequence={sequences[1]}
                   speed={10}
@@ -205,7 +206,7 @@ const Services = () => {
                 </>
                 ) : hoverId == 2 ? (
                 <>
-            <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
+            <Image loading="eager" priority={true} quality={100} onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg' width={0} height={0}/>
                 <TypeAnimation
                   sequence={sequences[2]}
                   speed={10}
@@ -215,7 +216,7 @@ const Services = () => {
                 </>
               ) : hoverId == 3 ? (
                 <>
-            <img onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg'/>
+            <Image loading="eager" priority={true} quality={100} onClick={()=>{changeSequence1(null)}} className={style.undo} src='/undo.svg' width={0} height={0}/>
                 <TypeAnimation
                   sequence={sequences[3]}
                   speed={10}
@@ -261,7 +262,7 @@ const Services = () => {
                       key={tech.name}
                       className={style.tech}
                     >
-                      <img className={style.tech_img} src={tech.icon} alt={tech.name} loading="lazy" />
+                      <Image loading="eager" priority={true} quality={100} className={style.tech_img} width={0} height={0} src={tech.icon} alt={tech.name} />
                     </motion.abbr>
                   ))}
                 </motion.div>
@@ -285,7 +286,7 @@ const Services = () => {
                       key={tech.name}
                       className={style.tech}
                     >
-                      <img className={style.tech_img} src={tech.icon} alt={tech.name} loading="lazy" />
+                      <Image loading="eager" priority={true} quality={100} className={style.tech_img} width={0} height={0} src={tech.icon} alt={tech.name} />
                     </motion.abbr>
                   ))}
                 </motion.div>
@@ -309,7 +310,7 @@ const Services = () => {
                       key={tech.name}
                       className={style.tech}
                     >
-                      <img className={style.tech_img} src={tech.icon} alt={tech.name} loading="lazy" />
+                      <Image loading="eager" priority={true} quality={100} className={style.tech_img} width={0} height={0} src={tech.icon} alt={tech.name} />
                     </motion.abbr>
                   ))}
                 </motion.div>
@@ -333,7 +334,7 @@ const Services = () => {
                       key={tech.name}
                       className={style.tech}
                     >
-                      <img className={style.tech_img} src={tech.icon} alt={tech.name} loading="lazy" />
+                      <Image loading="eager" priority={true} quality={100} className={style.tech_img} width={0} height={0} src={tech.icon} alt={tech.name} />
                     </motion.abbr>
                   ))}
                 </motion.div>
@@ -357,7 +358,7 @@ const Services = () => {
                       key={tech.name}
                       className={style.tech}
                     >
-                      <img className={style.tech_img} src={tech.icon} alt={tech.name} loading="lazy" />
+                      <Image loading="eager" priority={true} quality={100} className={style.tech_img} width={0} height={0} src={tech.icon} alt={tech.name}/>
                     </motion.abbr>
                   ))}
                 </motion.div>

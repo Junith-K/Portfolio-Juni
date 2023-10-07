@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../components/styles/navbar.module.css"
 
 export const navData = [
@@ -37,7 +38,7 @@ const Nav = () => {
           </div>
           
           <div>
-            <img width={20} height={20} src={link.icon}/>
+            <Image loading="eager" priority={true} quality={100} width={20} height={20} alt={link.name} src={link.icon}/>
           </div>
           </Link>;
       })

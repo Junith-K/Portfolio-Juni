@@ -10,6 +10,7 @@ const Header = () => {
           <div className="flex justify-center items-center gap-5">
           <Link href={'/'}>
             <Image src={'/logo.png'}
+            loading="eager" priority={true} quality={100}
             className="max-sm:w-[100px] max-sm:h-[40px]"
             width={137}
             height={53}
