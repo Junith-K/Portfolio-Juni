@@ -12,6 +12,7 @@ const item = [
   {
     key: "lawa",
     title: "Lawazia Tech",
+    position: "Software Engineer",
     description: "We help global brands with digital products on web, mobile and connected platforms.",
     timeStart: "Jan 2023",
     timeEnd: "Jun 2023",
@@ -20,6 +21,7 @@ const item = [
   {
     key: "bill",
     title: "Bill OK",
+    position: "Frontend Developer Intern",
     description: "BillOK automates invoice management with AI, empowering entrepreneurs to focus on business growth.",
     timeStart: "Jun 2022",
     timeEnd: "Aug 2022",
@@ -62,6 +64,7 @@ const Services = () => {
             <div className={styles.mainxu}>
               <Image loading="eager" width={500} height={250} quality={100} className={styles.tokenImagexu} src={item[0].image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[0].title}</h2>
+              <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[0].position}</h2>
               <p className={styles.descriptionxu}>{item[0].description}</p>
               <div className={styles.tokenInfoxu}>
                 <div className={styles.durationxu}>{item[0].timeStart}</div>
@@ -81,6 +84,7 @@ const Services = () => {
             <div className={styles.mainxu}>
               <Image loading="eager" width={500} height={250} quality={100} className={styles.tokenImagexu} src={item[1].image} alt="NFT" />
               <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[1].title}</h2>
+              <h2 className='pt-1 text-center max-[960px]:text-[0.9rem]'>{item[1].position}</h2>
               <p className={styles.descriptionxu}>{item[1].description}</p>
               <div className={styles.tokenInfoxu}>
                 <div className={styles.durationxu}>{item[1].timeStart}</div>
